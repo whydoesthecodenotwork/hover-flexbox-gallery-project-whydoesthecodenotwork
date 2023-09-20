@@ -14,10 +14,14 @@ h1 {
 
 body {
     /*background-image: There is no image*/
+    text-align: center;
 }
 
 .card {
-    width:inherit;
+    line-height: 1;
+    break-inside: avoid;
+    width: 100% !important;    
+    height: auto !important;  
     border: 0.5rem;
     border-style: solid;
     border-radius: 1rem;
@@ -29,7 +33,6 @@ body {
     margin: 1rem 1rem;
     border-color: rgb(255,96,0);
     background-color: rgb(212, 212, 212);
-    box-shadow: 0px 0px 0 0 rgb(255,96,0);
     animation-name: reverse;
     animation-duration: 0.2s;
     animation-timing-function: ease;
@@ -70,31 +73,28 @@ body {
 }
 
 #container {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;
+    display:inline-block;  
+    line-height: 0;  
+    -webkit-column-count: 3;    
+    -webkit-column-gap: 0px;    
+    -moz-column-count: 3;
+    -moz-column-gap: 0px;
+    column-count: 3;    
+    column-gap: 0px;   
 }
 
-.column {
-    display: flex;
-    flex: 25%;
-    max-width: 25%;
-    flex-direction: column;
-    margin-top: 0;
-    margin-bottom: 0;
-}
 
-@media (max-width: 1050px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
+ @media (max-width: 1000px) {
+    #container {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
     }
-}
-
-@media (max-width: 700px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
+   }  
+ @media (max-width: 600px) {
+    #container {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+     column-count:        1;
     }
-}
+   }
