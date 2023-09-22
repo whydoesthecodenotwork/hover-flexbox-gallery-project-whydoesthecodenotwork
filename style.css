@@ -19,7 +19,7 @@ body {
 }
 
 .card {
-    width:33%;
+    width:100%;
     line-height: 1;
     break-inside: avoid;
     margin-bottom: 1rem;
@@ -84,17 +84,26 @@ body {
 #container {
     line-height: 0;  
     display:inline-block;   
+    -webkit-column-count: 3;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    3;
+    -moz-column-gap:      0px;
+    column-count:         3;
+    column-gap:           0px;  
     margin: 1rem 1rem;
 }
 
-
- @media (max-width: 1000px) {
-    .card {
-        width:49%;
+  @media (max-width: 800px) {
+    #container {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
     }
-   }  
- @media (max-width: 600px) {
-    .card {
-        width:99%
+  }
+  @media (max-width: 400px) {
+    #container {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
     }
-   }
+  }
