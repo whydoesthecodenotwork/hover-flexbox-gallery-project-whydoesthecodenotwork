@@ -1,110 +1,213 @@
 body,
 html,
 * {
-    font-size: 10px;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  font-size: 10px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    font-size: 10rem;
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 10rem;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 body {
-    /*background-image: There is no image*/
-    text-align: center;
+  /*background-image: There is no image*/
+  text-align: center;
 }
 
 .card {
-    width:100%;
-    line-height: 1;
-    break-inside: avoid;
-    margin-bottom: 1rem;
-    border: 0.5rem;
-    border-style: solid;
-    border-radius: 2rem;
-    display:inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    border-color: rgb(255,96,0);
-    background-color: rgb(212, 212, 212);
-    animation-name: reverse;
-    animation-duration: 0.2s;
-    animation-timing-function: ease;
+  width: 33%;
+  height: fit-content;
+  line-height: 1;
+  break-inside: avoid;
+  margin-bottom: 1rem;
+  border: 0.5rem;
+  border-style: solid;
+  border-radius: 2rem;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-color: rgb(255, 96, 0);
+  background-color: rgb(212, 212, 212);
+  animation-name: reverse;
+  animation-duration: 0.2s;
+  animation-timing-function: ease;
+  vertical-align: text-top;
+}
+
+.card * {
+  display: inline-block;
 }
 
 @keyframes hover {
-    from {
-        box-shadow: 0px 0px 0 0 rgb(255,96,0);
-    }
-    to {
-        box-shadow: 0px 0px 1rem 0.1rem rgb(255,96,0);
-    }
+  from {
+    box-shadow: 0px 0px 0 0 rgb(255, 96, 0);
   }
+  to {
+    box-shadow: 0px 0px 1rem 0.1rem rgb(255, 96, 0);
+  }
+}
 
 @keyframes reverse {
-    from {box-shadow: 0px 0px 1rem 0.1rem rgb(255,96,0);}
-    to {box-shadow: 0px 0px 0 0 rgb(255,96,0);}
+  from {
+    box-shadow: 0px 0px 1rem 0.1rem rgb(255, 96, 0);
+  }
+  to {
+    box-shadow: 0px 0px 0 0 rgb(255, 96, 0);
+  }
 }
 
 .card:hover {
-    animation-name: hover;
-    box-shadow: 0px 0px 1rem 0.1rem rgb(255,96,0);
+  animation-name: hover;
+  box-shadow: 0px 0px 1rem 0.1rem rgb(255, 96, 0);
 }
 
-@font-face{font-family:bahnschrift;font-style:normal;font-weight:400;src:local('Bahnschrift'),url('https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 1.woff') format('woff')}@font-face{font-family:bahnschrift;font-style:normal;font-weight:400;src:local('Bahnschrift'),url('https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 10.woff') format('woff')}@font-face{font-family:bahnschrift;font-style:normal;font-weight:400;src:local('Bahnschrift'),url('https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 11.woff') format('woff')}@font-face{font-family:bahnschrift;font-style:normal;font-weight:400;src:local('Bahnschrift'),url('https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 12.woff') format('woff')}@font-face{font-family:bahnschrift;font-style:normal;font-weight:400;src:local('Bahnschrift'),url('https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 13.woff') format('woff')}@font-face{font-family:bahnschrift;font-style:normal;font-weight:400;src:local('Bahnschrift'),url('https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 14.woff') format('woff')}@font-face{font-family:bahnschrift;font-style:normal;font-weight:400;src:local('Bahnschrift'),url('https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 2.woff') format('woff')}@font-face{font-family:bahnschrift;font-style:normal;font-weight:400;src:local('Bahnschrift'),url('https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 3.woff') format('woff')}@font-face{font-family:bahnschrift;font-style:normal;font-weight:400;src:local('Bahnschrift'),url('https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 4.woff') format('woff')}@font-face{font-family:bahnschrift;font-style:normal;font-weight:400;src:local('Bahnschrift'),url('https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 5.woff') format('woff')}@font-face{font-family:bahnschrift;font-style:normal;font-weight:400;src:local('Bahnschrift'),url('https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 6.woff') format('woff')}@font-face{font-family:bahnschrift;font-style:normal;font-weight:400;src:local('Bahnschrift'),url('https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 7.woff') format('woff')}@font-face{font-family:bahnschrift;font-style:normal;font-weight:400;src:local('Bahnschrift'),url('https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 8.woff') format('woff')}@font-face{font-family:bahnschrift;font-style:normal;font-weight:400;src:local('Bahnschrift'),url('https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 9.woff') format('woff')}@font-face{font-family:bahnschrift;font-style:normal;font-weight:400;src:local('Bahnschrift'),url(https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT.woff) format('woff')}
+@font-face {
+  font-family: bahnschrift;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bahnschrift"),
+    url("https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 1.woff") format("woff");
+}
+@font-face {
+  font-family: bahnschrift;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bahnschrift"),
+    url("https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 10.woff") format("woff");
+}
+@font-face {
+  font-family: bahnschrift;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bahnschrift"),
+    url("https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 11.woff") format("woff");
+}
+@font-face {
+  font-family: bahnschrift;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bahnschrift"),
+    url("https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 12.woff") format("woff");
+}
+@font-face {
+  font-family: bahnschrift;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bahnschrift"),
+    url("https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 13.woff") format("woff");
+}
+@font-face {
+  font-family: bahnschrift;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bahnschrift"),
+    url("https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 14.woff") format("woff");
+}
+@font-face {
+  font-family: bahnschrift;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bahnschrift"),
+    url("https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 2.woff") format("woff");
+}
+@font-face {
+  font-family: bahnschrift;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bahnschrift"),
+    url("https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 3.woff") format("woff");
+}
+@font-face {
+  font-family: bahnschrift;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bahnschrift"),
+    url("https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 4.woff") format("woff");
+}
+@font-face {
+  font-family: bahnschrift;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bahnschrift"),
+    url("https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 5.woff") format("woff");
+}
+@font-face {
+  font-family: bahnschrift;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bahnschrift"),
+    url("https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 6.woff") format("woff");
+}
+@font-face {
+  font-family: bahnschrift;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bahnschrift"),
+    url("https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 7.woff") format("woff");
+}
+@font-face {
+  font-family: bahnschrift;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bahnschrift"),
+    url("https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 8.woff") format("woff");
+}
+@font-face {
+  font-family: bahnschrift;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bahnschrift"),
+    url("https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT 9.woff") format("woff");
+}
+@font-face {
+  font-family: bahnschrift;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bahnschrift"),
+    url(https://fonts.cdnfonts.com/s/21353/BAHNSCHRIFT.woff) format("woff");
+}
 
 .card__title {
-    font-size: 2.8vh;
-    text-align: center;
-    margin-bottom: 1rem;
-    font-family:'Bahnschrift', sans-serif;
-    text-shadow: 0 0.1rem 0.3rem rgb(255,96,0);
-    padding:1rem;
+  font-size: 2.8vh;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: "Bahnschrift", sans-serif;
+  text-shadow: 0 0.1rem 0.3rem rgb(255, 96, 0);
+  padding: 1rem;
 }
 
 .card__description {
-    font-size: 2vh;
-    text-align: center;
-    margin-top: 1rem;
-    font-family:'Bahnschrift', sans-serif;
-    padding:1rem;
+  font-size: 2vh;
+  text-align: center;
+  margin-top: 1rem;
+  font-family: "Bahnschrift", sans-serif;
+  padding: 1rem;
 }
 
 .card__image {
-    width: 100%;
-    border-radius: 0.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
 }
 
 #container {
-    line-height: 0;  
-    display:inline;
-    block-direction:
-    -webkit-column-count: 3;
-    -webkit-column-gap:   1rem;
-    -moz-column-count:    3;
-    -moz-column-gap:      1rem;
-    column-count:         3;
-    column-gap:           1rem;  
-    margin: 1rem 1rem;
+  line-height: 0;
+  display: inline-block;
 }
 
-  @media (max-width: 800px) {
-    #container {
-    -moz-column-count:    2;
-    -webkit-column-count: 2;
-    column-count:         2;
-    }
+@media (max-width: 900px) {
+  .card {
+    width: 49%;
   }
-  @media (max-width: 400px) {
-    #container {
-    -moz-column-count:    1;
-    -webkit-column-count: 1;
-    column-count:         1;
-    }
+}
+@media (max-width: 600px) {
+  .card {
+    width: 99%;
   }
+}
