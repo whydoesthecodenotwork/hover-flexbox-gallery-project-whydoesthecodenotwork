@@ -147,7 +147,6 @@ h4 a:hover {
 
 .card {
   width: 24%;
-  margin: 0 auto;
   line-height: 1;
   break-inside: avoid;
   margin-bottom: 0.5rem;
@@ -205,6 +204,11 @@ h4 a:hover {
   margin-top: 1rem;
   font-family: "Bahnschrift", sans-serif;
   padding: 1rem;
+  line-height: 1.1;
+}
+
+i {
+  font-size:inherit;
 }
 
 .card__image {
@@ -217,7 +221,8 @@ h4 a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  justify-content: center;
+  justify-content: space-around;
+  gap: 0;
 }
 
 @media (max-width: 1050px) {
@@ -228,12 +233,12 @@ h4 a:hover {
 
 @media (max-width: 900px) {
   .card {
-    width: 50%;
+    width: 49%;
   }
 }
 
 @media (max-width: 600px) {
   .card {
-    width: 100%;
+    width: 99%;
   }
 }
