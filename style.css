@@ -141,10 +141,6 @@ h4 a {
   text-decoration: none;
 }
 
-h4 a:hover {
-  color: rgb(255, 96, 0);
-}
-
 .card {
   width: 24%;
   line-height: 1;
@@ -169,24 +165,23 @@ h4 a:hover {
 @keyframes hover {
   from {
     box-shadow: 0px 0px 0 0 rgb(255, 96, 0);
+    background-color: rgb(212, 212, 212);
   }
   to {
     box-shadow: 0px 0px 1rem 0.1rem rgb(255, 96, 0);
+    background-color: rgb(232, 222, 212);
   }
 }
 
 @keyframes reverse {
   from {
     box-shadow: 0px 0px 1rem 0.1rem rgb(255, 96, 0);
+    background-color: rgb(232, 222, 212);
   }
   to {
     box-shadow: 0px 0px 0 0 rgb(255, 96, 0);
+    background-color: rgb(212, 212, 212);
   }
-}
-
-.card:hover {
-  animation-name: hover;
-  box-shadow: 0px 0px 1rem 0.1rem rgb(255, 96, 0);
 }
 
 .card__title {
@@ -208,7 +203,7 @@ h4 a:hover {
 }
 
 i {
-  font-size:inherit;
+  font-size: inherit;
 }
 
 .card__image {
@@ -223,6 +218,7 @@ i {
   align-items: stretch;
   justify-content: space-around;
   gap: 0;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 1050px) {
@@ -240,5 +236,15 @@ i {
 @media (max-width: 600px) {
   .card {
     width: 99%;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  h4 a:hover {
+    color: rgb(255, 96, 0);
+  }
+  .card:hover {
+    animation-name: hover;
+    box-shadow: 0px 0px 1rem 0.1rem rgb(255, 96, 0);
   }
 }
