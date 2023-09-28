@@ -143,6 +143,7 @@ h4 a {
 
 .card {
   width: 24%;
+  margin: 0 auto;
   line-height: 1;
   break-inside: avoid;
   margin-bottom: 0.5rem;
@@ -159,6 +160,7 @@ h4 a {
   animation-name: reverse;
   animation-duration: 0.2s;
   animation-timing-function: ease;
+  animation-fill-mode: both;
   vertical-align: text-top;
 }
 
@@ -216,8 +218,7 @@ i {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  justify-content: space-around;
-  gap: 0;
+  justify-content: center;
   margin-bottom: 1rem;
 }
 
