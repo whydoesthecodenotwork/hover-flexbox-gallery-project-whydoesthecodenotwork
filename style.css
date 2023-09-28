@@ -111,6 +111,7 @@ html,
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 #logo {
@@ -201,11 +202,6 @@ h4 a {
   margin-top: 1rem;
   font-family: "Bahnschrift", sans-serif;
   padding: 1rem;
-  line-height: 1.1;
-}
-
-i {
-  font-size: inherit;
 }
 
 .card__image {
